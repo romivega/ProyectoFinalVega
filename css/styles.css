@@ -1,0 +1,300 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: rgb(252, 245, 245);
+}
+
+.nav-link,
+.nav-link.active,
+.navbar-nav .nav-link.active {
+  color: rgb(252, 245, 245);
+}
+.nav-link:hover,
+.nav-link.active:hover,
+.navbar-nav .nav-link.active:hover {
+  color: rgb(171, 209, 171);
+}
+
+.navbar-toggler {
+  background-color: rgb(171, 209, 171);
+}
+
+.carousel-item img {
+  height: 450px;
+  width: 0px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 90vh;
+  }
+}
+@media (min-width: 1200PX) {
+  .carousel-item img {
+    height: 90vh;
+  }
+}
+h1, h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+footer .container-redes a {
+  color: rgb(171, 209, 171);
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.contenedor-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .contenedor-banner {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+.banner-uno, .banner-dos, .banner-tres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-uno iconify-icon, .banner-dos iconify-icon, .banner-tres iconify-icon {
+  font-size: 60px;
+}
+
+.irArriba {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .main-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+form .campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones-form {
+  border: solid 1px rgb(252, 245, 245);
+  width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(171, 209, 171);
+  font-weight: bold;
+}
+.botones-form:hover {
+  background-color: black;
+  color: rgb(171, 209, 171);
+}
+
+iframe {
+  max-width: 100%;
+}
+
+textarea {
+  height: 150px;
+  width: 250px;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .container-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.card {
+  background-color: rgb(211, 221, 211);
+  border-radius: 10px;
+  gap: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-text {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(76, 80, 80);
+}
+
+.card-title {
+  font-size: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+}
+
+.comprar {
+  border: solid 1px rgb(252, 245, 245);
+  width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(171, 209, 171);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.comprar:hover {
+  background-color: black;
+  color: rgb(171, 209, 171);
+}
+
+.irArriba {
+  padding: 20px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.botones, .boton--cancelar, .boton--aceptar {
+  width: 150px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  gap: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-barra {
+  display: flex;
+  justify-content: center;
+}
+
+.barra-progreso {
+  margin-top: 30px;
+  width: 60%;
+  border: solid 1px;
+  height: 15px;
+}
+
+.barra-rellena {
+  border: solid 1px;
+  height: 13px;
+  width: 50%;
+  background-color: rgb(171, 209, 171);
+  animation: rellenando 3s;
+}
+
+@keyframes rellenando {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+}
+.fraseproductos {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.productos {
+  font-size: small;
+}
+
+h1 {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

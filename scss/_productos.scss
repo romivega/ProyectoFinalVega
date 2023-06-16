@@ -1,0 +1,52 @@
+.videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media (min-width: $tablet) {
+    .videos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+
+
+
+.fraseproductos{
+    font-family: $fuente-principal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: $espacio-chico;
+
+}
+
+.productos{
+    font-size: small;
+  
+}
+
+
+h1{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,74 @@
+body{
+    font-family: $fuente-principal;
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+.nav-link,
+.nav-link.active,
+.navbar-nav .nav-link.active {
+color: $color-secundario;
+
+&:hover {
+    color: $color-terciario;
+}
+
+}
+
+.navbar-toggler {
+    background-color: $color-terciario;
+}
+
+.carousel-item img {
+    height: 450px;
+    width: 0px;
+    
+}
+
+@media (min-width: $tablet) {
+    .carousel-item img {
+        height: 100vh;
+    }
+}
+
+@media (min-width: $desktop) {
+    .carousel-item img {
+        height: 90vh;
+    }
+}
+
+@media (min-width: $desktopXG) {
+    .carousel-item img {
+        height: 90vh;
+    }
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: $espacio-medio;
+}
+
+h3{
+    text-align: center;
+    margin-top: $espacio-grande;
+}
+
+p{
+    font-size: $fuente-media;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: $espacio-grande;
+    
+
+    .container-redes a {
+        color: $color-terciario;
+        text-decoration: none;
+        font-size: 40px;
+    }
+
+}

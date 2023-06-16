@@ -1,0 +1,78 @@
+
+
+.container-cards {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+@media (min-width: 768px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+.container-cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+.card{
+    background-color: rgb(211, 221, 211);
+    border-radius: 10px;
+    gap: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text {
+    font-size: $fuente-media;
+    text-align: center;
+    color: rgb(76, 80, 80);
+}
+
+.card-title {
+    font-size: $fuente-principal;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+ p{
+    font-weight: bold;
+}
+
+
+.comprar {
+    border: solid 1px $color-secundario;
+    width: 200px;
+    padding: $espacio-mini;
+    border-radius: 20px;
+    background-color: $color-terciario;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+
+&:hover {
+    background-color: $color-primario;
+    color: $color-terciario;
+}
+}
+
+.irArriba{
+    padding: 20px;
+    font-weight: bold;
+    font-size: medium;
+}

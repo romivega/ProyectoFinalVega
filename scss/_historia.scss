@@ -1,0 +1,53 @@
+
+.botones{
+    width: 150px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton--aceptar{
+    @extend .botones;
+}
+
+.boton--cancelar{
+    @extend .botones;
+}
+
+
+
+.section-barra{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.barra-progreso{
+    margin-top: 30px;
+    width: 60%;
+    border: solid 1px;
+    height: 15px;
+   
+}
+
+
+.barra-rellena{
+    border: solid 1px;
+    height: 13px;
+    width: 50%;
+    background-color: $color-terciario;
+    animation: rellenando 3s; 
+}
+
+@keyframes rellenando {
+0%{
+    width: 0;
+}
+100% {
+    width: 50%;
+}
+}
